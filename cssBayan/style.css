@@ -44,16 +44,14 @@ img {
   padding: 10px;
   font-size: 18px;
   font-weight: 500;
- /* cursor: pointer;
-  */
 }
+
 label::after{
   content: url('/cssBayan/icons/fontawesome1.png');
   margin-left: 10px;
   margin-left: auto;
   font-size: 24px;
 }
-
 
 input[type="radio"]{
   display:none;
@@ -128,6 +126,8 @@ input[type="radio"]:active + label{
       font-size: 2vw;
  }
 }
+/* Added for large screen, remove if not needed on your account */
+
 @media screen and (max-width: 2560px) {
   .accordion {
       margin: 3.75rem auto;
