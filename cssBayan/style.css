@@ -1,0 +1,167 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Simpson Font', sans-serif;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Simpson Font';
+  src: url('./fonts/akbar.ttf') format('truetype');
+}
+body{
+  background: #FED41D;
+}
+img {
+  width: 50%;
+  height: auto;
+  max-width: 100%;
+}
+.accordion {
+  margin: 3.75rem auto;
+  max-width: 100%;
+}
+.accordion h1 {
+  list-style: none;
+  width: 100%;
+  font-size: 2.5rem;
+  margin: 1.25rem;
+  padding: 0.625rem;
+  border-radius: 0.5rem;
+  background: #009DDC;
+}
+.accordion dd {
+  list-style: none;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #009DDC;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0, 0.15), -6px -6px 10px -1px rgba(255,255,255, 0.7);
+}
+.accordion dd label{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+label::after{
+  content: url('./icons/fontawesome1.png');
+  margin-left: 10px;
+  margin-left: auto;
+  font-size: 24px;
+}
+
+input[type="radio"]{
+  display:none;
+}
+input[type="radio"]:active + label{
+  color: red;
+}
+.accordion .content {
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow:hidden;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accordion input[type="radio"]:checked + label + .content {
+  max-height: 400px;
+  padding: 10px 10px 20px;
+}
+@media screen and (max-width: 1920px) {
+  .accordion {
+      margin: 3.75rem auto;
+ }
+  .accordion dd {
+      margin: 10px;
+      padding: 5px;
+      font-size: 16px;
+ }
+  .accordion:not(:hover) input[type="radio"]:not(:checked) + label, .accordion:hover label {
+      color: #FED41D;
+ }
+  img:hover {
+      transform: scale(1.04);
+ }
+  .accordion2:hover label {
+      color: black;
+ }
+  input[type="radio"]:active + label{
+      color: #F14E28;
+ }
+  .accordion:not(:hover) dd label::after, .accordion:not(:hover) input[type="radio"]:checked + label::after {
+      content: none;
+ }
+  .accordion input[type="radio"]:checked + label::after{
+      content: url('./icons/fontawesome2.png');
+ }
+  .accordion dd:hover input[type="radio"] + label + .content {
+      max-height: 400px;
+      padding: 10px 10px 20px;
+ }
+}
+
+@media screen and (min-width: 820px) {
+  .accordion {
+      margin: 3.75 auto;
+      max-width: 800px;
+ }
+  .accordion h1 {
+      font-size: 24px;
+ }
+  .accordion dd {
+      font-size: 16px;
+ }
+}
+@media screen and (min-width: 568px) {
+  .accordion h1 {
+      font-size: 3.5vw;
+ }
+  .accordion dd {
+      font-size: 2vw;
+ }
+}
+/* Added for large screen, remove if not needed on your account */
+
+@media screen and (max-width: 2560px) {
+  .accordion {
+      margin: 3.75rem auto;
+ }
+  .accordion h1 {
+      font-size: 50px;
+      margin: 10px;
+      padding: 5px;
+ }
+  .accordion dd {
+      margin: 10px;
+      padding: 5px;
+      font-size: 16px;
+}
+  .accordion:not(:hover) input[type="radio"]:not(:checked) + label, .accordion:hover label {
+      color: #FED41D;
+ }
+  img:hover {
+      transform: scale(1.04);
+ }
+  .accordion2:hover label {
+      color: black;
+ }
+  input[type="radio"]:active + label{
+      color: #F14E28;
+ }
+  .accordion:not(:hover) dd label::after, .accordion:not(:hover) input[type="radio"]:checked + label::after {
+      content: none;
+ }
+  .accordion input[type="radio"]:checked + label::after{
+      content: url('./icons/fontawesome2.png');
+ }
+  .accordion dd:hover input[type="radio"] + label + .content {
+      max-height: 400px;
+      padding: 10px 10px 20px;
+ }
+}
