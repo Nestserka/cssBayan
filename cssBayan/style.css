@@ -6,7 +6,7 @@
 }
 @font-face {
   font-family: 'Simpson Font';
-  src: url('/cssBayan/fonts/akbar.ttf') format('truetype');
+  src: url('./fonts/akbar.ttf') format('truetype');
 }
 body{
   background: #FED41D;
@@ -47,7 +47,7 @@ img {
 }
 
 label::after{
-  content: url('/cssBayan/icons/fontawesome1.png');
+  content: url('./icons/fontawesome1.png');
   margin-left: 10px;
   margin-left: auto;
   font-size: 24px;
@@ -98,7 +98,7 @@ input[type="radio"]:active + label{
       content: none;
  }
   .accordion input[type="radio"]:checked + label::after{
-      content: url('/cssBayan/icons/fontawesome2.png');
+      content: url('./icons/fontawesome2.png');
  }
   .accordion dd:hover input[type="radio"] + label + .content {
       max-height: 400px;
@@ -158,7 +158,7 @@ input[type="radio"]:active + label{
       content: none;
  }
   .accordion input[type="radio"]:checked + label::after{
-      content: url('/cssBayan/icons/fontawesome2.png');
+      content: url('./icons/fontawesome2.png');
  }
   .accordion dd:hover input[type="radio"] + label + .content {
       max-height: 400px;
